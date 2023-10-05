@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya - Developer Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Aditya Vikram Somvanshi</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I am a highly motivated and dedicated begineer programmer seeking a challange entry-level position to apply my technical skills and contribute to a dynamic software development team. Eager to learn and grow in a professional environment.</p>
+            <div class="social-media">
+                <a href="https://twitter.com/adityavs167" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/aditya-vikram-somvanshi-411918105/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1NVQ2r453RVOoOeAVC3X2tpP5VcqTAfYa/view?usp=drive_link" target="_blank" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <!-- <img src="img/mypic.png" alt=""> -->
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <!-- <img src="img/mypic1.png" alt=""> -->
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Web Developer!</h3>
+            <p>🎓 I'm a final year student pursuing Bachelors of Technology in Electronics and Communication Engineering at National Institute of Technology, Meghalaya. <br>
+                💼 Currently seeking opportunities in front-end development. <br>
+                🌟 I have a strong interest in web development and user interfaces. <br>
+                🚀 Proficient in ReactJS and passionate about creating interactive web applications. <br><span id="dots"></span><span id="more"> 
+                📚 Continuous learner with a keen interest in staying updated with the latest tech trends. <br>
+                🌈 Enjoy creating intuitive and visually appealing user experiences. <br>
+                🎮 Outside coding, I love watching cricket, playing video games and exploring new places.</span></p>
+            <button onclick="myFunction()" class="btn" id="myBtn">Read more</button>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>JavaScript Developer</h3>
+                <p>Love writing JavaScript code for both front-end & back-end</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-paint'></i>
+                <h3>Web Design</h3>
+                <p>As a web designer, I specialize in creating visually stunning and functional websites that engage users and deliver an exceptional user experience. With expertise in HTML, CSS, and JavaScript, I have the skills to create beautiful and intuitive designs that are optimized for usability and performance.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-laptop' ></i>
+                <i class='bx bx-trophy' ></i>
+                <i class='bx bx-laptop' ></i>
+                <h3>Programmer</h3>
+                <p>I'm a passionate programmer and love coding web applications</p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="img/1.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Food Delivery Website</h4>
+                    <p>A Responsive Food Delivery Website focused on designing the home page of a web-based food ordering platform, that built using HTML and CSS.</p>
+                    <a href="https://github.com/ankit-kumar-0/Food-Delivery-Website" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img/2.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>To-Do List</h4>
+                    <p>A simple to-do list web app built with HTML, CSS and JavaScript to save and manage to-dos, and save them to the local storage.</p>
+                    <a href="https://github.com/ankit-kumar-0/To-Do-List" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/3.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Basic Calculator</h4>
+                    <p>A Basic Calculator using javaScript, Where you can able to perform basic mathematical operation</p>
+                    <a href="https://github.com/ankit-kumar-0/Basic-Calculator" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" id="phone" placeholder="Mobile Number">
+                <input type="text" id="message1" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="message2" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Ankit | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="index.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "ankitrajpsr@gmail.com",
+                Password : "bxkzvvqivdfexfpn",
+                To : 'b20ec028@nitm.ac.in',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "Full Name: " + document.getElementById("name").value
+                    + "<br> Email Address: " + document.getElementById("email").value
+                    + "<br> Mobile Number: " + document.getElementById("phone").value
+                    + "<br> Email Subject: " + document.getElementById("message1").value
+                    + "<br> Message: " + document.getElementById("message2").value
+            }).then(
+            message => alert("Message Sent Succesfully")
+            );
+        }
+    </script>
+</body>
+</html>
